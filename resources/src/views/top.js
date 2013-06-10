@@ -6,7 +6,7 @@ define(function(require, exports, module) {
   tpl = require('tpl/common/top.tpl');
   TopView = Backbone.View.extend({
     tagName: 'div',
-    className: 'navbar navbar-fixed-top',
+    className: 'navbar navbar-fixed-top animated fadeInLeft',
     template: _.template(tpl),
     events: {
       'click a': 'a'
