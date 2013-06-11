@@ -1,0 +1,2 @@
+<%=login%>
+<%=avatar_url%>

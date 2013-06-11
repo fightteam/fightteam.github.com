@@ -1,8 +1,8 @@
 define(function(require, exports, module) {
-  var AuthorModel, Backbone, BlogModel;
+  var Backbone, BlogModel, UserModel;
 
   Backbone = require('backbone');
-  AuthorModel = require('./author.js');
+  UserModel = require('./user.js');
   BlogModel = Backbone.Model.extend({
     initialize: function() {
       return this.set({
@@ -10,7 +10,7 @@ define(function(require, exports, module) {
       });
     },
     defaults: {
-      author: new AuthorModel(),
+      author: new UserModel(),
       id: 'blog-0',
       title: '我的前端技术选型',
       time: '2013年6月9日',

@@ -2653,6 +2653,16 @@ body {
 .toTop:focus {
   outline: none;
 }
+.sliding-menu {
+  float: right;
+  list-style: none;
+  font-size: 3em;
+  line-height: 1;
+}
+.sliding-menu a {
+  color: #000000;
+  text-decoration: none;
+}
 body {
   margin: 60px 8px 8px 8px;
 }
