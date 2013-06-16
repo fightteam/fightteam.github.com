@@ -8,7 +8,8 @@ define(function(require, exports, module) {
   gobal.blogs.add({
     title: '我的前端技术选型',
     commentUrl: 'https://github.com/fightteam/fightteam.github.com/issues/1',
-    commentAPI: 'https://api.github.com/repos/fightteam/fightteam.github.com/issues/1'
+    commentAPI: 'https://api.github.com/repos/fightteam/fightteam.github.com/issues/1',
+    contentTpl: about_web_tpl
   });
   return module.exports = gobal;
 });

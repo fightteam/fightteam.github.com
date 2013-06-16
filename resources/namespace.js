@@ -1,6 +1,7 @@
 define(function(require, exports, module) {
-  var gobal;
+  var BlogsCollection, gobal;
 
+  BlogsCollection = require('src/collections/blogs');
   gobal = {};
   gobal.header = {
     title: 'FighteTeam',
