@@ -7,17 +7,14 @@ define(function(require, exports, module) {
   AppView = Backbone.View.extend({
     el: '#container',
     initialize: function() {
-      console.log('aaaa');
+      this.$container = this.$el.find('.author');
       return this.listenTo(users, 'add', this.addOne);
     },
     events: {
       'click a': 'a'
     },
     render: function() {
-      var app;
-
-      app = this;
-      users.fetch();
+      users.each(this.addOne, this);
       return this;
     },
     addOne: function(user) {
@@ -27,14 +24,7 @@ define(function(require, exports, module) {
       userView = new UserView({
         model: user
       });
-      return this.$el.append(userView.render().el);
-    },
-    getUser: function(name) {
-      console.log(name);
-      return $.get('https://api.github.com/users/' + name, function(data) {
-        users.set(data);
-        return console.log(users);
-      });
+      return this.$container.append(userView.render().el);
     }
   });
   return module.exports = AppView;

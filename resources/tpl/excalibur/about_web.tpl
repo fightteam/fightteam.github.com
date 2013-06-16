@@ -44,6 +44,6 @@
 </pre>
                   </section>
                   
-                  <p><strong>源码：</strong><a href="">1</a></p>
+                  <p><strong>源码：</strong><a href="https://github.com/excalibur/seajs-demo">seajs-demo</a></p>
                 </div>
                 

@@ -4,17 +4,14 @@ define(function(require, exports, module) {
   Backbone = require('backbone');
   UserModel = Backbone.Model.extend({
     defaults: {
-      gravatar_id: '',
-      type: '',
-      name: '',
-      company: '',
-      blog: '',
-      location: '',
-      email: '',
-      hireable: true,
-      bio: '',
-      intro: '',
-      myUrl: ''
+      url: "",
+      html_url: "",
+      issue_url: "",
+      id: 19241960,
+      user: {},
+      created_at: "",
+      updated_at: "",
+      body: ""
     }
   });
   return module.exports = UserModel;

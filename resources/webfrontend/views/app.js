@@ -16,7 +16,7 @@ define(function(require, exports, module) {
       return this.render();
     },
     events: {
-      '': ''
+      'click a': 'a'
     },
     render: function() {
       this.addMenu();
@@ -38,6 +38,9 @@ define(function(require, exports, module) {
       });
       this.$content.append(blogView.render().el);
       return this.menuView.addOne(blog);
+    },
+    a: function() {
+      return console.log('aaaaa');
     }
   });
   return module.exports = AppView;

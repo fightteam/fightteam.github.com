@@ -2,7 +2,7 @@ seajs.config({
   plugins: ['shim', 'text'],
   alias: {
     'jquery': {
-      src: 'lib/jquery/jquery.js',
+      src: 'http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js',
       exports: 'jQuery'
     },
     'underscore': {

@@ -6,27 +6,9 @@ define(function(require, exports, module) {
   gobal.blogs = new BlogsCollection();
   about_web_tpl = require('tpl/excalibur/about_web.tpl');
   gobal.blogs.add({
-    title: '我的后端技术选型2'
-  });
-  gobal.blogs.add({
-    title: '我的后端技术选型3',
-    contentTpl: about_web_tpl
-  });
-  gobal.blogs.add({
-    title: '我的后端技术选型4',
-    contentTpl: about_web_tpl
-  });
-  gobal.blogs.add({
-    title: '我的后端技术选型5',
-    contentTpl: about_web_tpl
-  });
-  gobal.blogs.add({
-    title: '我的后端技术选型6',
-    contentTpl: about_web_tpl
-  });
-  gobal.blogs.add({
-    title: '我的后端技术选型7',
-    contentTpl: about_web_tpl
+    title: '我的后端技术选型',
+    commentUrl: 'https://github.com/fightteam/fightteam.github.com/issues/2',
+    commentAPI: 'https://api.github.com/repos/fightteam/fightteam.github.com/issues/2'
   });
   return module.exports = gobal;
 });
