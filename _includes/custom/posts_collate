@@ -1,0 +1,19 @@
+
+  {% for post in posts_collate  %}
+    {% capture this_year %}{{ post.date | date: "%Y年" }}{% endcapture %}
+    {% capture this_month %}{{ post.date | date: "%m月" }}{% endcapture %}
+    {% capture next_year %}{{ post.previous.date | date: "%Y年" }}{% endcapture %}
+    {% capture next_month %}{{ post.previous.date | date: "%m月" }}{% endcapture %}
+  
+    {% if forloop.first %}
+      <time>{{ next_year }}</time>
+    {% endif %}
+      {% if this_year != next_year %}
+        <time>{{ next_year }}</time>    
+      {% endif %}
+      <a href="{{ BASE_PATH }}{{ post.address }}" class="list-group-item">
+              <h4 class="list-group-item-heading">{{ post.title }}</h4>
+              <p class="list-group-item-text">{{ post.description }}</p>
+        </a>
+  {% endfor %}
+{% assign posts_collate = nil %}
