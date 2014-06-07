@@ -6,7 +6,7 @@
     {% capture next_month %}{{ post.previous.date | date: "%m月" }}{% endcapture %}
   
     {% if forloop.first %}
-      <time>{{ next_year }}</time>
+      <time>{{ this_year }}</time>
     {% endif %}
       {% if this_year != next_year %}
         <time>{{ next_year }}</time>    
