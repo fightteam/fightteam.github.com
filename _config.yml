@@ -11,12 +11,12 @@ pygments: true
 title : Fight Team
 tagline: Ideal is a good breakfast.
 author :
-  name : 刘真源
+  name : fightteam
   email : lzy7750015@qq.com
-  github : excalibur
-  twitter : faithexcalibur
-  weibo : 2030214513
-  qq : 316283487
+  github : fightteam
+  # twitter : faithexcalibur
+  # weibo : 2030214513
+  # qq : 316283487
 
 
 license :
@@ -24,10 +24,13 @@ license :
   name : CC BY-SA 3.0 协议
 
 friend_url :
-  - name: excalibur博客
-    url: http://excalibur.github.io
+  - name: 欧阳澄泓
+    url: http://leeln.com/
   - name: fighttogether博客
     url: http://fighttogether.github.io/
+  - name: lmymoonsky博客
+    url: http://lmymoonsky.github.io/
+
 
 public:
   name: GitHub Pages
