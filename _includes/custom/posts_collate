@@ -8,12 +8,14 @@
     {% if forloop.first %}
       <time>{{ this_year }}</time>
     {% endif %}
-      {% if this_year != next_year %}
-        <time>{{ next_year }}</time>    
-      {% endif %}
-      <a href="{{ BASE_PATH }}{{ post.address }}" class="list-group-item">
-              <h4 class="list-group-item-heading">{{ post.title }}</h4>
-              <p class="list-group-item-text">{{ post.description }}</p>
-        </a>
+
+    {% if this_year != next_year %}
+      <time>{{ next_year }}</time>    
+    {% endif %}
+    
+    <a href="{{ BASE_PATH }}{{ post.address }}" class="list-group-item">
+            <h4 class="list-group-item-heading">{{ post.title }}</h4>
+            <p class="list-group-item-text">{{ post.description }}</p>
+      </a>
   {% endfor %}
 {% assign posts_collate = nil %}
